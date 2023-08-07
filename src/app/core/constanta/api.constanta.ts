@@ -1,5 +1,6 @@
 const apiUrl = 'http://localhost:4000';
 
 const AUTH = `${apiUrl}/auth`;
+const VISIT = `${apiUrl}/visit`;
 
-export default { AUTH };
+export default { AUTH, VISIT };

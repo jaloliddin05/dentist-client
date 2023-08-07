@@ -48,15 +48,17 @@ const routes: Routes = [
             path: 'document',
             component: DocumentComponent,
           },
+          { path: '**', redirectTo: 'visit' },
         ],
       },
+      { path: '**', redirectTo: 'home' },
     ],
   },
   {
     path: 'login',
     component: LoginComponent,
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

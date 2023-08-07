@@ -12,6 +12,7 @@ import { ArchiveComponent } from './archive/archive.component';
 import { RouterModule } from '@angular/router';
 import { HomeListComponent } from './home-list/home-list.component';
 import { SharedModule } from '../../shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { SharedModule } from '../../shared/shared.module';
     MatNativeDateModule,
     MatInputModule,
     MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class HomeModule {}

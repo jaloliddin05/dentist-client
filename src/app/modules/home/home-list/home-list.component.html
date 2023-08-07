@@ -1,12 +1,11 @@
 <div class="d-flex align-items-center justify-content-between bg-white home-list-container">
     <div class="d-flex align-items-center home-top">
-        <button [class.active]="active == 'today'" class="btn home-btns" (click)="active = 'today'">За сегодня</button>
-        <button [class.active]="active == 'tomorrow'" class="btn home-btns" (click)="active='tomorrow'">На
+        <button [class.active]="active == 'today'" class="btn home-btns" (click)="getByDate(1)">За сегодня</button>
+        <button [class.active]="active == 'tomorrow'" class="btn home-btns" (click)="getByDate(2)">На
             завтра</button>
         <mat-form-field class="w-100 home-date" (click)="active='date'">
             <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker" formControlName="value">
-            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <input matInput [matDatepicker]="picker" [(ngModel)]="date" (dateChange)="getByDate(3)">
             <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
@@ -14,16 +13,18 @@
     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight">Добавить</button>
 </div>
+
+
 <ul class="list-unstyled d-flex flex-wrap">
     <li *ngFor="let item of data" class="item-card" (click)="clickCard(item.id)">
         <div class="item-card-top d-flex align-items-center justify-content-between">
-            <p class="time-desc">{{item.time}}</p>
-            <p class="phone-desc">{{item.phone}}</p>
+            <p class="time-desc">{{item.startTime + ':' + item.endTime}}</p>
+            <p class="phone-desc">{{item.patient.phone}}</p>
         </div>
         <div class="item-card-bottom d-flex flex-column bg-white">
-            <h3 class="item-card-name">{{item.name}}</h3>
-            <p class="item-card-year">{{item.year}}</p>
-            <p class="item-card-service">{{item.service}}</p>
+            <h3 class="item-card-name">{{item.patient.name}}</h3>
+            <p class="item-card-year">{{item.patient.birthday}}</p>
+            <p class="item-card-service">{{item.services[0].title}}</p>
         </div>
     </li>
 </ul>
