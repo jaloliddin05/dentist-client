@@ -9,7 +9,7 @@ export class AuthService {
   constructor(private readonly httpClient: HttpClient) {}
 
   login(data: any) {
-    return this.httpClient.post(`${API_URL}/login`, data, {
+    return this.httpClient.post(`${API_URL.AUTH}/login`, data, {
       withCredentials: true,
     });
   }

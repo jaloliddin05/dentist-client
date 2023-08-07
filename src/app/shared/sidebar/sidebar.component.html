@@ -1,1 +1,22 @@
-<p>sidebar works!</p>
+<div class="sidebar-container bg-white d-flex flex-column">
+    <div [routerLink]="['/home']" class="d-flex align-items-center sidebar-top">
+        <img src="../../../assets/logo.svg" alt="" class="">
+        <p class="logo-desc">Med clinic</p>
+    </div>
+    <div class="sidebar-body w-100 h-100 flex-grow-1 d-flex flex-column justify-content-between">
+        <div class="w-100">
+            <button routerLinkActive="active" [routerLink]="['/home']" class="btn sidebar-btn">Главная</button>
+            <button routerLinkActive="active" [routerLink]="['/schedule']" class="btn sidebar-btn">Расписания
+                приёма</button>
+            <button routerLinkActive="active" [routerLink]="['/request']" class="btn sidebar-btn">Запросы по
+                ссылке</button>
+            <button routerLinkActive="active" [routerLink]="['/archive']" class="btn sidebar-btn">Архив</button>
+        </div>
+        <div class="">
+            <button routerLinkActive="active" [routerLink]="['/test']" class="btn sidebar-btn">Профиль</button>
+            <button routerLinkActive="active" [routerLink]="['/test']" class="btn sidebar-btn">Настройка</button>
+            <button routerLinkActive="active" [routerLink]="['/test']" class="btn sidebar-btn">Помочь</button>
+            <button routerLinkActive="active" [routerLink]="['/test']" class="btn sidebar-btn">Выход</button>
+        </div>
+    </div>
+</div>

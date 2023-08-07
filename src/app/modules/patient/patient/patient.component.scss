@@ -1,0 +1,27 @@
+.home-list-container {
+  padding: 8px;
+}
+.home-top {
+  background-color: #efefef;
+  padding: 3px;
+}
+.home-btns {
+  display: inline-block;
+  width: 170px !important;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--tex, #14171f);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+  padding: 11px 44px;
+  height: 48px;
+}
+.active {
+  color: #0e50fc;
+  background-color: #fff !important;
+  font-weight: bold;
+}

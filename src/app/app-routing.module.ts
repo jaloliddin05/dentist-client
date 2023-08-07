@@ -6,6 +6,10 @@ import { RequestComponent } from './modules/home/request/request.component';
 import { ArchiveComponent } from './modules/home/archive/archive.component';
 import { HomeListComponent } from './modules/home/home-list/home-list.component';
 import { LoginComponent } from './modules/auth/login/login.component';
+import { PatientComponent } from './modules/patient/patient/patient.component';
+import { VisitComponent } from './modules/patient/visit/visit.component';
+import { MedCardComponent } from './modules/patient/med-card/med-card.component';
+import { DocumentComponent } from './modules/patient/document/document.component';
 
 const routes: Routes = [
   {
@@ -13,7 +17,7 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: '',
+        path: 'home',
         component: HomeListComponent,
       },
       {
@@ -28,13 +32,31 @@ const routes: Routes = [
         path: 'archive',
         component: ArchiveComponent,
       },
+      {
+        path: 'patient/:id',
+        component: PatientComponent,
+        children: [
+          {
+            path: 'visit',
+            component: VisitComponent,
+          },
+          {
+            path: 'med-card',
+            component: MedCardComponent,
+          },
+          {
+            path: 'document',
+            component: DocumentComponent,
+          },
+        ],
+      },
     ],
   },
   {
-    path: 'auth/login',
+    path: 'login',
     component: LoginComponent,
   },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({

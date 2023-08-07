@@ -1,0 +1,96 @@
+.home-list-container {
+  padding: 8px;
+}
+.home-top {
+  background-color: #efefef;
+  padding: 3px;
+}
+.home-btns {
+  display: inline-block;
+  width: 170px !important;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--tex, #14171f);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+  padding: 11px 44px;
+  height: 48px;
+}
+.home-date {
+  width: 170px !important;
+  background-color: transparent !important;
+  margin-bottom: -23px;
+}
+.active {
+  color: #0e50fc;
+  background-color: #fff !important;
+  font-weight: bold;
+}
+//....
+.item-card {
+  width: 360px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  margin-right: 27px;
+  margin-top: 27px;
+  cursor: pointer;
+}
+
+.item-card-top {
+  padding: 12px 30px;
+  background-color: #f2fbff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.time-desc,
+.phone-desc {
+  color: var(--tex, #14171f);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.item-card-bottom {
+  padding: 20px 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.item-card-name {
+  color: var(--tex, #14171f);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  margin: 0;
+}
+.item-card-year {
+  color: var(--tex-2, #78797d);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-top: 5px;
+}
+.item-card-service {
+  border: 2px solid green;
+  width: fit-content;
+  padding: 5px 10px;
+  color: #007b39;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 45px;
+  margin: 0;
+  margin-top: 23px;
+}

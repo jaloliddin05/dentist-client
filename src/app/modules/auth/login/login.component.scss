@@ -1,0 +1,70 @@
+.auth-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-form {
+  margin-top: 250px;
+  width: 320px;
+  height: 48px;
+}
+
+.login-heading {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.login-desc {
+  color: #000;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 208px;
+  opacity: 0.7;
+  margin-top: 11px;
+}
+
+.login-label {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.login-input {
+  margin-top: 6px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.4;
+}
+
+.login-btn {
+  margin-top: 40px;
+}

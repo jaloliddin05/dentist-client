@@ -1,1 +1,15 @@
-<p>patient works!</p>
+<div class="d-flex align-items-center justify-content-between bg-white home-list-container">
+    <div class="d-flex align-items-center home-top">
+        <button routerLinkActive="active" [routerLink]="['/patient',patientId,'med-card']" class="btn home-btns">Мед
+            карта</button>
+        <button routerLinkActive="active" [routerLink]="['/patient',patientId,'visit']"
+            class="btn home-btns">Посещение</button>
+        <button routerLinkActive="active" [routerLink]="['/patient',patientId,'document']"
+            class="btn home-btns">Документы</button>
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Добавить</button>
+</div>
+<div class="">
+    <router-outlet></router-outlet>
+</div>
