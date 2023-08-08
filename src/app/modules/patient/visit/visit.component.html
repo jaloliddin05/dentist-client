@@ -1,1 +1,13 @@
-<p>visit works!</p>
+<ul class="visit-list list-unstyled">
+    <li class="d-flex align-items-center visit-card-top">
+        <p class="visit-desc visit-date">Дата</p>
+        <p class="visit-desc visit-time">Время</p>
+        <p class="visit-desc">Услаги</p>
+    </li>
+    <li *ngFor="let visit of visits" class="d-flex align-items-center visit-card">
+        <span class="visit-span"></span>
+        <p class="visit-desc visit-date">{{visit.date | dateParser:'shortDate'}}</p>
+        <p class="visit-desc visit-time">{{visit.startTime+'-'+visit.endTime}}</p>
+        <p class="visit-desc">{{visit.services[0].title}}</p>
+    </li>
+</ul>

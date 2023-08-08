@@ -1,0 +1,41 @@
+.visit-list {
+  width: 528px;
+  background-color: #fff;
+  padding: 3px 12px;
+  min-height: 75vh;
+  border-radius: 0px 0px 8px 8px;
+}
+.visit-card {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.visit-card-top {
+  padding: 12px 40px;
+  line-height: 17px;
+  opacity: 0.6;
+}
+.visit-span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0f0;
+  margin-right: 8px;
+}
+.visit-desc {
+  color: #000;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.visit-desc + .visit-desc {
+  margin-left: 35px;
+}
+
+.visit-time,
+.visit-date {
+  width: 90px;
+}

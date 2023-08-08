@@ -5,6 +5,7 @@ import { MedCardComponent } from './med-card/med-card.component';
 import { VisitComponent } from './visit/visit.component';
 import { DocumentComponent } from './document/document.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,6 @@ import { RouterModule } from '@angular/router';
     VisitComponent,
     DocumentComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, SharedModule],
 })
 export class PatientModule {}

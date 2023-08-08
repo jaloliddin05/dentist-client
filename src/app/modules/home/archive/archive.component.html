@@ -1,1 +1,19 @@
-<p>archive works!</p>
+<div class="">
+    <div class="row archive-top">
+        <div class="col truncate archive-caption">№        Имя Фамиля</div>
+        <div class="col truncate archive-caption">Дата регестрации</div>
+        <div class="col truncate archive-caption">Тел.номер</div>
+        <div class="col truncate archive-caption">День рождения</div>
+        <div class="col truncate archive-caption">Пол</div>
+    </div>
+    <ul class="list-unstyled">
+        <li *ngFor="let visit of visits; let index = index" class="row archive-card">
+            <div class="col truncate archive-desc">{{index + 1 +'       '+ visit.patient.name }}</div>
+            <div class="col truncate archive-desc">{{ visit.date | dateParser : 'numberDate' }}</div>
+            <div class="col truncate archive-desc">{{ visit.patient.phone }}</div>
+            <div class="col truncate archive-desc">{{ visit.patient.birthday | dateParser : 'numberDate' }}</div>
+            <div class="col truncate archive-desc">{{ visit.patient.gender == 1 ?
+                "Мужской":"Женский" }} {{'       ⋮'}}</div>
+        </li>
+    </ul>
+</div>

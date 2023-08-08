@@ -14,4 +14,17 @@ export class VisitService {
       params: { date },
     });
   }
+
+  getByPatientId(id: string) {
+    return this.httpClient.get(`${API_URL.VISIT}/by-patient/${id}`, {
+      withCredentials: true,
+    });
+  }
+
+  getArchive(date: any) {
+    return this.httpClient.get(`${API_URL.VISIT}/by-archive`, {
+      withCredentials: true,
+      params: { date },
+    });
+  }
 }

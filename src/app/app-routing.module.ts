@@ -13,6 +13,10 @@ import { DocumentComponent } from './modules/patient/document/document.component
 
 const routes: Routes = [
   {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
     path: '',
     component: HomeComponent,
     children: [
@@ -53,10 +57,6 @@ const routes: Routes = [
       },
       { path: '**', redirectTo: 'home' },
     ],
-  },
-  {
-    path: 'login',
-    component: LoginComponent,
   },
   { path: '**', redirectTo: '' },
 ];

@@ -16,7 +16,7 @@
 
 
 <ul class="list-unstyled d-flex flex-wrap">
-    <li *ngFor="let item of data" class="item-card" (click)="clickCard(item.id)">
+    <li *ngFor="let item of data" class="item-card" (click)="clickCard(item.patient.id)">
         <div class="item-card-top d-flex align-items-center justify-content-between">
             <p class="time-desc">{{item.startTime + ':' + item.endTime}}</p>
             <p class="phone-desc">{{item.patient.phone}}</p>
