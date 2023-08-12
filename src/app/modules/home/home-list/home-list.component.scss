@@ -11,7 +11,7 @@
   border-radius: 4px;
   background: transparent;
   color: var(--tex, #14171f);
-  font-family: Lato;
+  font-family: "Lato-400";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -49,7 +49,7 @@
 .time-desc,
 .phone-desc {
   color: var(--tex, #14171f);
-  font-family: Lato;
+  font-family: "Lato-700";
   font-size: 14px;
   font-style: normal;
   font-weight: bold;
@@ -63,7 +63,7 @@
 
 .item-card-name {
   color: var(--tex, #14171f);
-  font-family: Lato;
+  font-family: "Lato-600";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -72,7 +72,7 @@
 }
 .item-card-year {
   color: var(--tex-2, #78797d);
-  font-family: Lato;
+  font-family: "Lato-400";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -85,7 +85,7 @@
   width: fit-content;
   padding: 5px 10px;
   color: #007b39;
-  font-family: Lato;
+  font-family: "Lato-400";
   font-size: 13px;
   font-style: normal;
   font-weight: 400;

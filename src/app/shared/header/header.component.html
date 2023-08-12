@@ -7,7 +7,10 @@
             <img src="../../../assets/notification.svg" width="24" height="24" alt="" class="">
         </button>
         <div class="d-flex align-items-center">
-            <img src="../../../assets/profile.png" alt="" width="44" height="44" class="profile-img">
+            <img *ngIf="!user?.avatar?.url" src="../../../assets/profile.png" alt="" width="44" height="44"
+                class="profile-img" [routerLink]="['profile',user?.id]">
+            <img *ngIf="user?.avatar?.url" [src]="user?.avatar?.url" width="24" height="24" alt="" class="avatar"
+                [routerLink]="['profile',user?.id]">
             <div class="profile-div">
                 <p class="header-name">Jerome Bell</p>
                 <p class="header-id">ID: 123957</p>

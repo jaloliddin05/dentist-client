@@ -10,11 +10,21 @@ import { PatientComponent } from './modules/patient/patient/patient.component';
 import { VisitComponent } from './modules/patient/visit/visit.component';
 import { MedCardComponent } from './modules/patient/med-card/med-card.component';
 import { DocumentComponent } from './modules/patient/document/document.component';
+import { UserProfileComponent } from './modules/user/user-profile/user-profile.component';
+import { ClientRequestComponent } from './modules/user/client-request/client-request.component';
 
 const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'profile/:id',
+    component: UserProfileComponent,
+  },
+  {
+    path: 'doctor/:id/client-request',
+    component: ClientRequestComponent,
   },
   {
     path: '',

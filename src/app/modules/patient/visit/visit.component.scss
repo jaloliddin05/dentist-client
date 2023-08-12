@@ -24,7 +24,7 @@
 }
 .visit-desc {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato-400";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -32,10 +32,11 @@
   margin: 0;
 }
 .visit-desc + .visit-desc {
-  margin-left: 35px;
+  margin-left: 30px;
 }
 
 .visit-time,
 .visit-date {
-  width: 90px;
+  width: 100px;
+  word-break: normal;
 }

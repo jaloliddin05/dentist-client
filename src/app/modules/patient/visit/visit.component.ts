@@ -27,4 +27,20 @@ export class VisitComponent implements OnInit {
       },
     });
   }
+
+  visitStatus(date: string, time: string) {
+    const curDate = new Date();
+    const newDate = new Date(date + ' ' + time);
+
+    const diff = newDate.getTime() - curDate.getTime();
+
+    if (diff > 0) {
+      return true;
+    } else {
+      const hour = +time.split(':')[0];
+      const minute = +time.split(':')[1];
+
+      return;
+    }
+  }
 }

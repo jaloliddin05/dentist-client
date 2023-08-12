@@ -9,13 +9,17 @@
   outline: none;
 }
 .profile-img {
+  cursor: pointer;
+}
+.avatar {
+  border-radius: 50%;
 }
 .profile-div {
   margin-left: 8px;
 }
 .header-name {
   color: #101828;
-  font-family: Inter;
+  font-family: "Inter-500";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -24,7 +28,7 @@
 }
 .header-id {
   color: #667085;
-  font-family: Inter;
+  font-family: "Inter-400";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

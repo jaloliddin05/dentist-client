@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "Lato-600";
+  src: url("./assets/fonts/lato/Lato-Medium.ttf");
+}
+@font-face {
+  font-family: "Lato-400";
+  src: url("./assets/fonts/lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-600";
+  src: url("./assets/fonts/lato/Lato-Semibold.ttf");
+}
+@font-face {
+  font-family: "Lato-700";
+  src: url("./assets/fonts/lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Inter-400";
+  src: url("./assets/fonts/inter/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter-500";
+  src: url("./assets/fonts/inter/Inter-Medium.ttf");
+}
