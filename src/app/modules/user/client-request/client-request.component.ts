@@ -20,4 +20,6 @@ export class ClientRequestComponent {
       time: ['', Validators.required],
     });
   }
+
+  onSubmit() {}
 }
